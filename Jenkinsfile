@@ -1,5 +1,9 @@
 pipeline {
-    agent none 
+
+	node('master') {
+	    sh("your shell script")   
+	}
+
     //Build
     stages {
         stage('Run-Maven-Build') {
