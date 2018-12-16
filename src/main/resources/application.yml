@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: bipro-ws-eureka
+  cloud:
+    config:
+        uri: http://bipro-ws-config-server:8888
+server:
+  port: ${server_port:8761}
+  
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    server:
+      waitTimeInMsWhenSyncEmpty: 0
